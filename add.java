@@ -1,8 +1,5 @@
-public class Addition {
+public class add {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 3;
-        int sum = a + b;
-        System.out.println("Sum is: " + sum);
+        System.out.println("Hello, World!");
     }
 }
