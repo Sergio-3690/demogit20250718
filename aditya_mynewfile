@@ -1,1 +1,28 @@
 thanks for the instructions given and explained
+
+ls
+nano Dockerfile:
+docker build -t sujatadocker2025/javaapp .
+#docker images
+docker run -d --name sujata_javacontainer 03f
+docker run -d --name sujata_javacontainer 03f tail -f /dev/null
+docker ps -a
+# docker exec -it 6ec bash
+
+sudo apt-get install docker
+docker --version
+docker pull ubuntu
+docker images
+docker run -it -d ubuntu
+docker ps
+ps -a
+docker exec -it <container id> bash
+ls
+stop  conid
+kill 
+rm
+rmi
+
+
+
+
