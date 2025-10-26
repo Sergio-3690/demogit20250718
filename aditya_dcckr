@@ -1,7 +1,26 @@
 thanks for the instructions given and explained
 
-ls
-nano Dockerfile:
+DOCKERFILE
+
+ls Dockerfile Hello.java
+nano Dockerfile
+
+# Use official OpenJDK image
+FROM openjdk:17
+
+# Set working directory
+WORKDIR /app
+
+# Copy Java source code
+COPY HelloWorld.java /app
+
+# Compile Java program
+RUN javac HelloWorld.java
+
+# Run the program
+CMD ["java", "HelloWorld"]
+
+
 docker build -t sujatadocker2025/javaapp .
 #docker images
 docker run -d --name sujata_javacontainer 03f
@@ -23,6 +42,8 @@ stop  conid
 kill 
 rm
 rmi
+
+
 
 
 
