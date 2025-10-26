@@ -6,8 +6,9 @@ docker build -t sujatadocker2025/javaapp .
 #docker images
 docker run -d --name sujata_javacontainer 03f
 docker run -d --name sujata_javacontainer 03f tail -f /dev/null
+docker run -d --name sujata_javacontainer1 03f tail -f /dev/null
 docker ps -a
-# docker exec -it 6ec bash
+docker exec -it 6ec bash
 
 sudo apt-get install docker
 docker --version
