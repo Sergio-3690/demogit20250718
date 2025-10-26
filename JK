@@ -1,5 +1,6 @@
+sudo su
 sudo apt update
-sudo apt install fontconfig openjdk-21-jre
+sudo apt-get install openjdk-11-jdk
 java -version
 
 
@@ -11,3 +12,19 @@ echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
 sudo apt update
 sudo apt install jenkins
 
+sudo systemctl start jenkins.service
+sudo systemctl status jenkins
+enable
+
+
+Master
+mg jen=mg node
+env var java_home
+mg jen=secu=agent=fixed50000
+sudo ufw allow 50000/tcp
+
+curl -s0 http://192.168.91.9:8080/jnlpJars/agent.jar
+java -jar agent.jar url http://192.168.91.9:8080/-secret 5dba4380f3684aae1076adelefb5e6d181ec5dc954eed8ec4c12576bece50654 -name
+"agent sri" -webSocket workDir "/home/apsit/Desktop/Sridevi_50"
+
+general rstrict  console output
